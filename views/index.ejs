@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head.ejs') %>
+
+<body>
+
+    <div class="">
+        <h2>All Posts</h2>
+        <% if (data.length > 0) { %>
+            <% data.forEach(item => { %>
+
+                <h3 class="title"><%= item.name %></h3>
+                <p class="snippet"><%= item.createdAt %></p>
+                <p class="snippet"><%= item.message %></p>
+
+            <% }) %>
+        <% } else { %>
+            <p>There are no posts to display...</p>
+        <% } %>
+    </div>
+    
+</body>
+</html>
