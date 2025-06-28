@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+
+body {
+  font-family: 'Noto Serif', serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #f4e5f4;
+  color: #333;
+}
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 28px;
+  color: #222;
+  margin-bottom: 30px;
+}
+
+.post-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+.post-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 0 8px 0;
+  color: #1a1a1a;
+}
+
+.post-date {
+  font-size: 13px;
+  color: #888;
+  margin: 0 0 10px 0;
+}
+
+.post-message {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.5;
+  margin: 0;
+}

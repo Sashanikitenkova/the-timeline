@@ -5,15 +5,15 @@
 
 <body>
 
-    <div class="">
-        <h2>All Posts</h2>
+    <div class="container">
+        <h2 class="page-title">All Posts</h2>
         <% if (data.length > 0) { %>
             <% data.forEach(item => { %>
-
-                <h3 class="title"><%= item.name %></h3>
-                <p class="snippet"><%= item.createdAt %></p>
-                <p class="snippet"><%= item.message %></p>
-
+                <div class="post-card">
+                    <h3 class="post-title"><%= item.name %></h3>
+                    <p class="post-date"><%= item.createdAt %></p>
+                    <p class="post-message"><%= item.message %></p>
+                </div>
             <% }) %>
         <% } else { %>
             <p>There are no posts to display...</p>

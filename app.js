@@ -1,20 +1,11 @@
 const express = require('express');
-
+const routes = require('./config/routes');
 const app = express();
 
+app.use(express.static('public'));
 app.set('view engine', 'ejs');
 
-app.listen(3000, () => {
-    console.log('work');
-});
 
-app.get('/', (req, res) => {
-    const data = [
-        { name : "Michael Choi",
-          createdAt : "23-01-2013",
-          message : "This is my message    This is my message This is my message This is my messageThis is my message"
-        },
-    ];
+app.use(routes);
 
-     res.render('index', { title: 'Post', data });
-})
+app.listen(3000, () => console.log('Server is on 3000'));
