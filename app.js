@@ -1,5 +1,8 @@
 const express = require('express');
 const routes = require('./config/routes');
+
+// require('./config/mongoose');
+
 const app = express();
 
 app.use(express.static('public'));
